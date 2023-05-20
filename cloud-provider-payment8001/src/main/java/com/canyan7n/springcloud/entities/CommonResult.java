@@ -14,11 +14,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CommenResult<T> {
+public class CommonResult<T> {
     private Integer code;
     private String message;
     private T data;
-    CommenResult(Integer code,String message){
+    CommonResult(Integer code, String message){
         this(code, message,null);
     }
 }
