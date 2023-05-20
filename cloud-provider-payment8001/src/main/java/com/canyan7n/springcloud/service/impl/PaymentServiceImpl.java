@@ -3,6 +3,7 @@ package com.canyan7n.springcloud.service.impl;
 import com.canyan7n.springcloud.dao.PaymentDao;
 import com.canyan7n.springcloud.entities.Payment;
 import com.canyan7n.springcloud.service.PaymentService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
@@ -13,6 +14,7 @@ import javax.annotation.Resource;
  * @date ：2023/5/20 16:40
  * @description：TODO
  */
+@Service
 public class PaymentServiceImpl implements PaymentService {
     @Resource
     private PaymentDao paymentDao;
