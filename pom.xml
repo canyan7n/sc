@@ -9,6 +9,7 @@
 
   <modules>
     <module>cloud-provider-payment8001</module>
+    <module>cloud-consumer-order8002</module>
   </modules>
 
   <!--<name>Maven</name>-->
