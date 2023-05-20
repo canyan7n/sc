@@ -28,7 +28,7 @@ public class PaymentController {
         int result;
         result = paymentService.create(payment);
         if (result > 0){
-            log.info("插入结果" + result);
+            log.info("插入结果" + result + "xxxx");
             return new CommenResult(200,"插入成功",result);
         }else {
             return new CommenResult(444,"插入失败",null);
@@ -38,7 +38,7 @@ public class PaymentController {
     @GetMapping(value = "/payment/get/{id}")
     public CommenResult getPaymentById(@PathVariable("id") Integer id){
         Payment payment = paymentService.getPaymentById(id);
-        log.info("查询成功",payment);
+        log.info("查询成功" + payment);
         if (payment!=null){
             return new CommenResult(200,"查询成功",payment);
         }else {
