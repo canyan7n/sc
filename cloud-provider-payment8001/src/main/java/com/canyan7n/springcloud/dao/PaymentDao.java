@@ -6,6 +6,6 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface PaymentDao {
-    public void create(Payment payment);
+    public Integer create(Payment payment);
     public Payment getPaymentById(@Param("id") Integer id);
 }
