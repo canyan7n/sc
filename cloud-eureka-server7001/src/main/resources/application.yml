@@ -1,6 +1,5 @@
 server:
   port: 7001
-
 eureka:
   instance:
     hostname: localhost #服务器实例名称

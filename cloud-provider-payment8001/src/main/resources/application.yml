@@ -14,3 +14,11 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.canyan7n.springcloud.entities
+
+eureka:
+  client:
+    register-with-eureka: true #注册进Eureka
+    # 是否从server抓取注册信息 单节点无所谓，但集群必须设置true 配合ribbon分配负载均衡
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
